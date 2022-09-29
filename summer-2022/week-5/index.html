@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Experiments</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      // Update the HTML on the page.
+      $('#container').html('<p>Hello World!</p>');
+
+      // Click handling
+      $('#click-counter').click(function () {
+        $('#click-counter').text(parseInt($('#click-counter').text()) + 1);
+      });
+
+      // Ajax handling
+      $('#ajax-button').click(function () {
+        $(this).prop('disabled', true);
+        $.ajax({
+          url: 'https://jakespurlock.com/wp-json/wp/v2/posts',
+          success: function (data, status, xhr) {
+            data.forEach(element => {
+              $('#ajax-button-result').append('<li><a href="' + element.link + '">' + element.title.rendered + '</a></li>');
+            });
+            $('#ajax-button').prop('disabled', false);
+          }
+        });
+      });
+
+      // CSS Updates
+      $('#css-button').click(function () {
+        $('#css-button').css('background-color', 'red');
+      });
+
+      $('#kitten').hover(function () {
+        $(this).attr('src', 'https://placekitten.com/g/300/300');
+        console.log('Hover');
+      }, function () {
+        $(this).attr('src', 'https://placekitten.com/300/300');
+        console.log('Moved away');
+      });
+    });
+  </script>
+  <div id="container"></div>
+
+  <h3>Click Counter</h3>
+  <button id="click-counter">0</button>
+
+  <h3>Recent blog posts?</h3>
+  <button id="ajax-button">Find out!</button>
+  <ul id="ajax-button-result"></ul>
+
+  <div class="css">
+    <h3>CSS Button</h3>
+    <button id="css-button">Make me red</button>
+  </div>
+
+  <img src="https://placekitten.com/300/300" alt="Kittens" id="kitten" style="margin-top:20px;">
+
+</body>
+
+</html>

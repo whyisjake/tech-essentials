@@ -1,0 +1,19 @@
+#first {
+  border: 2px solid red;
+}
+.blue-border {
+  border: 2px solid blue;
+}
+@media (min-width: 768px) {
+  .blue-border {
+    border: 2px solid blue;
+  }
+}
+.wired-style {
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+body {
+  background-color: #EEEEEE;
+}

@@ -1,0 +1,9 @@
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 480px;
+  }
+  .column {
+    width: 100%;
+  }
+}

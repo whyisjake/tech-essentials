@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design</title>
+  <style>
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #eee;
+    }
+
+    /* For mobiles devices smaller than 768px */
+    @media only screen and (max-width: 768px) {
+      nav.desktop {
+          display: none;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    /* For mobiles devices larger than 768px */
+    @media only screen and (min-width: 768px) {
+      nav.mobile {
+          display: none
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Jake was here</h1>
+  </header>
+  <nav class="desktop">
+    <ul class="pills">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="mobile">
+    <ul class="pills">
+      <li><a href="#">Mobile Home</a></li>
+      <li><a href="#">Mobile About</a></li>
+      <li><a href="#">Mobile Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <p>Bacon ipsum dolor amet shank pork capicola pastrami doner jerky turducken. Ball tip jowl pork chop, pork belly flank drumstick tri-tip leberkas porchetta pancetta rump. Strip steak bresaola landjaeger turducken salami. Landjaeger buffalo sausage, tail swine filet mignon shankle ground round turkey. Pork chop prosciutto tongue, shank jerky pork belly kevin tail cow fatback pork. Pancetta alcatra leberkas shank pastrami. Rump leberkas pork boudin cupim andouille bacon, burgdoggen prosciutto chislic.
+
+    <p>Alcatra spare ribs ham hock, frankfurter fatback rump turducken leberkas short ribs short loin t-bone. Pork belly jerky jowl rump capicola strip steak cupim picanha cow tail frankfurter ribeye buffalo flank. Pork drumstick cow chislic, hamburger prosciutto brisket frankfurter chicken bacon landjaeger strip steak. Prosciutto filet mignon corned beef boudin hamburger, pork tongue pancetta tenderloin. Fatback alcatra pork belly bresaola swine sirloin pork chop porchetta. Chicken short loin alcatra, picanha venison kielbasa rump sirloin bacon capicola pork strip steak landjaeger. Alcatra brisket leberkas fatback burgdoggen doner shank porchetta ball tip.</p>
+
+    <p>Bacon ipsum dolor amet shank pork capicola pastrami doner jerky turducken. Ball tip jowl pork chop, pork belly flank drumstick tri-tip leberkas porchetta pancetta rump. Strip steak bresaola landjaeger turducken salami. Landjaeger buffalo sausage, tail swine filet mignon shankle ground round turkey. Pork chop prosciutto tongue, shank jerky pork belly kevin tail cow fatback pork. Pancetta alcatra leberkas shank pastrami. Rump leberkas pork boudin cupim andouille bacon, burgdoggen prosciutto chislic.
+
+    <p>Bacon ipsum dolor amet shank pork capicola pastrami doner jerky turducken. Ball tip jowl pork chop, pork belly flank drumstick tri-tip leberkas porchetta pancetta rump. Strip steak bresaola landjaeger turducken salami. Landjaeger buffalo sausage, tail swine filet mignon shankle ground round turkey. Pork chop prosciutto tongue, shank jerky pork belly kevin tail cow fatback pork. Pancetta alcatra leberkas shank pastrami. Rump leberkas pork boudin cupim andouille bacon, burgdoggen prosciutto chislic.
+
+  </main>
+
+</div>
+
+
+</body>
+</html>

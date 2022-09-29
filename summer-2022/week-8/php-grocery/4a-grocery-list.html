@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery List</title>
+
+    <!-- MATERIAL ICONS -->
+    <!-- https://fonts.google.com/icons?icon.query=delete&icon.style=Filled&icon.set=Material+Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="4b-grocery-list.js"></script>
+    <link href="4c-grocery-list.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="gro-wrap">
+      <h1>GROCERY LIST</h1>
+
+      <!-- (A) ADD ITEM -->
+      <form id="gro-form">
+        <input type="number" id="gro-qty" min="1" value="1" placeholder="Quantity" required disabled/>
+        <input type="text" id="gro-item" placeholder="Item Name" required disabled/>
+        <button id="gro-add" class="material-icons" disabled>add</button>
+      </form>
+
+      <!-- (B) ITEM LIST -->
+      <div id="gro-list"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Hide the logo
+    $('.header img').hide();
+    // Loop this forever
+    setInterval(function(){
+      $('.header img').fadeIn(2000).fadeOut();
+    }, 3000);
+    $('.header img').hide().fadeIn(2000);
+    $('.thumbs').hide();
+    $('.show-thumbs').click(function() {
+      $('.thumbs').toggle();
+    })
+  });
+</script>
+  <link rel="stylesheet" href="http://web.iyaclasses.com/~tudiscog/style.css">
+  <title>Dakota's Interests & Hobbies</title>
+</head>
+
+<body>
+
+  <div class="header" style="height: 400px;">
+    <img src="http://web.iyaclasses.com/~tudiscog/Images/interests_hobbies.png" alt="logo" />
+  </div>
+
+
+
+  <div style="margin-top: 10px; margin:auto; margin-left: 250px; border: 5px solid pink;padding: 15px; width: 60%;">
+    <div class="center">
+      <div class="container">
+        <p>
+          <strong>
+            As an interdisciplinary innovator, I take pride in my interests and hobbies as much as I take pride in
+            my work. When I was growing up, my understanding of hobbies was quite limited. I thought the correct way to
+            have a hobby was to have a single main interest that defines who you are. I have realized that people are
+            much more multi-dimensional than that. Our interests can also change and evolve over time. Thus, we cannot be
+            defined by any one single thing. My hobbies and interests are multi-faceted, just like I am. Please enjoy
+            exploring these four of them, below. </strong></p>
+            <button class="show-thumbs">Show Hobbies</button>
+      </div>
+      <br>
+      <br>
+      <div class="row noMargin thumbs">
+        <div class="one">
+          <a href="frasier.html"><strong>Frasier</strong>
+          </a>
+
+          <img class=main-frasier src="http://web.iyaclasses.com/~tudiscog/Images/main_frasier.jpg"
+            alt="cast of frasier">
+        </div>
+        <div class="two">
+          <a href="thrifting.html"><b>Thrifting</b></a>
+          <img class=main-thrifting src="http://web.iyaclasses.com/~tudiscog/Images/thrifting_main.jpg"
+            alt="racks of clothes in a thriftsore">
+        </div>
+      </div>
+      <div class="row noMargin thumbs">
+        <div class="three">
+          <a href="pasta.html"><b>Pasta</b></a>
+          <img class=main-pasta src="http://web.iyaclasses.com/~tudiscog/Images/main_pasta.jpg"
+            alt="a plate of rigatoni with vodka sauce"></img>
+        </div>
+        <div class="four">
+          <a href="social_justice.html"><b>Social Justice</b></a>
+          <img class=main-social_justice src="http://web.iyaclasses.com/~tudiscog/Images/Social_Justice_main.jpg"
+            alt="Your Voice Has Power"></img>
+        </div>
+
+      </div>
+      </p>
+    </div>
+</body>
+
+
+</html>

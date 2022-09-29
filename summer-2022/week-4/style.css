@@ -1,0 +1,22 @@
+/* General Rules */
+
+.container {
+  width: 960px;
+  margin:0 auto;
+}
+
+.column {
+  width: 480px;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+}
